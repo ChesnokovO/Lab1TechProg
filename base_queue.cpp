@@ -32,7 +32,6 @@ int base_queue::pop(void)
 	if (tmpHead == tmpTail)
 		setTail(NULL);
 	elem tmp = *tmpHead;
-	delete tmpHead;
 	return *tmp.getValue();
 }
 
